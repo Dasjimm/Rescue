@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RescueReady</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar hero-header">
+    <div class="hero-text">
+      <h1> RescueReady</h1>
+      <p>Your quick companion for Fire, Road Accident, and First Aid Emergencies.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="page active">
+  <div class="title-box">
+    <img src="image/RRPostHead.webp" alt="RRPostHead" class="title-image">
+    <div class="title-content">
+      <h2>Your Quick Emergency Guide</h2>
+      <p>Stay calm. Click on a guide below to learn what to do until help arrives.</p>
+    </div>
+  </div>
+</section>
+
+      <section class="card-grid">
+        <div class="card-link" onclick="showPage('fire')">
+          <div class="card">
+            <img src="image/fireaccident.jpg" alt="fireaccident" class="card-img">
+            <h3>🔥 Fire Safety</h3>
+          </div>
+        </div>
+
+        <div class="card-link" onclick="showPage('accidents')">
+          <div class="card">
+            <img src="image/road.jpg" alt="road" class="card-img">
+            <h3>🚗 Road Accidents</h3>
+          </div>
+        </div>
+
+        <div class="card-link" onclick="showPage('firstaid')">
+          <div class="card">
+            <img src="image/firstaid.jpg" alt="firstaid" class="card-img">
+            <h3>💉 First Aid</h3>
+          </div>
+        </div>
+      </section>
+    </section>
+
+<section id="fire" class="page">
+  <div class="content-box">
+    <h2>🔥 Fire Safety</h2>
+    <ul class="step-list">
+  <li onclick="toggleStep('step1')">Stay calm and assess the situation</li>
+<div id="step1" class="step-info">
+  <ol>
+    <li>Take a deep breath to steady yourself — staying calm helps you think clearly.</li>
+    <li>Quickly note where the fire is, whether flames/smoke are spreading, and the nearest exits.</li>
+    <li>If people are in immediate danger, shout clear instructions to get them moving toward a safe exit.</li>
+  </ol>
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/FJgSrQzNXwo"
+      title="Ways to Stay Calm in an Emergency"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">🎥 Video courtesy of <a href="https://www.youtube.com/watch?v=FJgSrQzNXwo" target="_blank">Ways to Stay Calm in an Emergency</a></p>
+  </div>
+</div>
+
+
+   <li onclick="toggleStep('step2')">Alert emergency services immediately</li>
+<div id="step2" class="step-info">
+  <ol>
+    <li>Call your local emergency number (e.g., <strong>911</strong>) and give your exact location.</li>
+    <li>Tell dispatch what is burning (electrical, kitchen, gas), whether anyone is trapped, and any hazards (gas smell, chemicals).</li>
+    <li>Follow dispatcher instructions and stay on the line if requested.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/EshlPGEIuLA"
+      title="How to Report an Emergency"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">🎥 Video courtesy of <a href="https://www.youtube.com/watch?v=EshlPGEIuLA" target="_blank">How to Report an Emergency</a></p>
+  </div>
+</div>
+
+
+<li onclick="toggleStep('step3')">Extinguish small fires only if safe</li>
+<div id="step3" class="step-info">
+  <ol>
+    <li>Only fight the fire if it is small, the room is not full of smoke, you have a clear escape route, and you know how to use the extinguisher.</li>
+    <li>Use the <strong>P.A.S.S.</strong> technique for portable extinguishers:
+      <ul>
+        <li><strong>P</strong> — Pull the pin</li>
+        <li><strong>A</strong> — Aim at the base of the fire</li>
+        <li><strong>S</strong> — Squeeze the handle</li>
+        <li><strong>S</strong> — Sweep side to side</li>
+      </ul>
+    </li>
+    <li>If the fire grows or spreads, evacuate immediately and close the door behind you.</li>
+  </ol>
+
+  <div class="video-container">
+    <video controls width="100%" poster="image/extinguisher-demo.jpg">
+      <source src="video/Fire Extinguisher.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="video-credit">🎥 Video courtesy of <a href="https://www.youtube.com/watch?v=BLjoWjCrDqg" target="_blank">U.S. Fire Administration</a></p>
+  </div>
+</div>
+
+
+      <li onclick="toggleStep('step4')">If someone is burned — immediate first aid</li>
+<div id="step4" class="step-info">
+  <ol>
+    <li>Stop the burning: remove them from the source of heat and extinguish flames (stop, drop & roll if clothing on fire).</li>
+    <li>Cool the burn under cool (not icy) running water for at least 20 minutes to reduce pain, swelling and deeper damage.</li>
+    <li>Remove jewelry or clothing near the burned area unless it is stuck to the skin.</li>
+    <li>After cooling, cover the burn loosely with cling film or a sterile, non-adhesive dressing to protect it.</li>
+    <li>Do NOT apply ice, butter, toothpaste, or ointments — these can worsen the injury.</li>
+    <li>Seek urgent medical care for: deep/full-thickness burns, burns on the face/hands/feet/genitals/joints, burns covering large areas, any electrical or chemical burns, or burns to young children/elderly.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/0AuQ30idF0c"
+      title="Burns and scalds: First aid steps and key action"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">🎥 Video courtesy of <a href="https://www.youtube.com/watch?v=0AuQ30idF0c" target="_blank">British Red Cross – First aid for burns</a></p>
+  </div>
+</div>
+
+<li onclick="toggleStep('step5')">Smoke inhalation & evacuation</li>
+<div id="step5" class="step-info">
+  <ol>
+    <li>Move anyone with breathing difficulty to fresh air immediately.</li>
+    <li>If the person is breathing but drowsy or confused, place them in a comfortable position and monitor breathing until EMS arrives.</li>
+    <li>If they stop breathing, begin CPR if trained and call emergency services.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/8EkX2qeAzp0"
+      title="How to Treat Smoke Inhalation"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">🎥 Video courtesy of <a href="https://www.youtube.com/watch?v=8EkX2qeAzp0" target="_blank">First Aid for Life — How to Treat Smoke Inhalation</a></p>
+  </div>
+</div>
+    <button class="back-btn" onclick="showPage('home')">⬅ Back</button>
+  </div>
+</section>
+
+
+<section id="accidents" class="page">
+  <div class="content-box">
+    <h2>🚗 Road Accidents</h2>
+    <ul class="step-list">
+ <li onclick="toggleStep('a_step1')">Secure the scene & keep yourself safe</li>
+<div id="a_step1" class="step-info">
+  <ol>
+    <li>Park safely, turn on hazard lights, and set warning triangles (if available) before approaching.</li>
+    <li>Check for further hazards (traffic, fire, spilled fuel) — do NOT put yourself in danger.</li>
+    <li>If the scene is unsafe, call emergency services and wait for professionals to secure it.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/f7WZkgItk_8"
+      title="Scene Safety: How to Stay Safe in Emergency Situations"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=f7WZkgItk_8" target="_blank">Scene Safety: How to Stay Safe in Emergency Situations</a>
+    </p>
+  </div>
+</div>
+<li onclick="toggleStep('a_step2')">Primary survey: responsiveness, airway, breathing, circulation</li>
+<div id="a_step2" class="step-info">
+  <ol>
+    <li>Shout and gently tap to check responsiveness. If unresponsive, shout for help and call emergency services immediately.</li>
+    <li>Open the airway (head tilt–chin lift if no suspected spinal injury) and check breathing for up to 10 seconds.</li>
+    <li>If not breathing normally, start CPR (compressions at ~100–120/min; 30 compressions : 2 breaths if trained).</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/ea1RJUOiNfQ"
+      title="How to do the Primary Survey - First Aid Training - St John Ambulance"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=ea1RJUOiNfQ" target="_blank">
+        St John Ambulance – How to do the Primary Survey
+      </a>
+    </p>
+  </div>
+</div>
+
+
+<li onclick="toggleStep('a_step3')">Control heavy bleeding</li>
+<div id="a_step3" class="step-info">
+  <ol>
+    <li>Apply firm, direct pressure on the wound with a clean cloth or dressing.</li>
+    <li>If blood soaks through, add layers — do not remove existing dressings.</li>
+    <li>If bleeding is life-threatening and cannot be controlled with pressure, a trained rescuer may apply a tourniquet above the limb — only as a last resort.</li>
+    <li>Call emergency services immediately if bleeding is severe (spurting blood, limb pale/cold) or if the person shows signs of shock.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/gMMfl0wCxHM"
+      title="How to Control & Stop Bleeding in an Emergency"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=gMMfl0wCxHM" target="_blank">
+        Mass General Brigham – How to Control & Stop Bleeding in an Emergency
+      </a>
+    </p>
+  </div>
+</div>
+
+
+
+    <li onclick="toggleStep('a_step4')">Suspected fracture / spinal injury</li>
+<div id="a_step4" class="step-info">
+  <ol>
+    <li>If you suspect a spinal/back/neck injury (e.g., after high-speed collision), tell the casualty not to move and keep them still in the position found.</li>
+    <li>Support the head and neck if you must open the airway — avoid twisting or turning the spine.</li>
+    <li>Immobilize broken limbs with splints only if you are trained; otherwise support gently and wait for EMS.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/Uqy2IUhYkVA"
+      title="What To Do If Someone Has A Spinal Cord Injury - First Aid Training - St John Ambulance"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=Uqy2IUhYkVA" target="_blank">
+        St John Ambulance – What To Do If Someone Has A Spinal Cord Injury
+      </a>
+    </p>
+  </div>
+</div>
+
+     <li onclick="toggleStep('a_step5')">Treat for shock & keep patient comfortable</li>
+<div id="a_step5" class="step-info">
+  <ol>
+    <li>Lay the person flat if there is no suspected spinal injury and elevate their legs slightly (about 30 cm) to improve blood flow to vital organs.</li>
+    <li>Loosen tight clothing, keep them warm with a blanket, and reassure them.</li>
+    <li>Monitor breathing and consciousness closely until help arrives.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/61urGQrmeNM"
+      title="How to Treat Shock - First Aid Training - St John Ambulance"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=61urGQrmeNM" target="_blank">
+        St John Ambulance – How to Treat Shock
+      </a>
+    </p>
+  </div>
+</div>
+    <button class="back-btn" onclick="showPage('home')">⬅ Back</button>
+  </div>
+</section>
+
+<section id="firstaid" class="page">
+  <div class="content-box">
+    <h2>💉 First Aid</h2>
+    <ul class="step-list">
+
+     <li onclick="toggleStep('f_step1')">Unresponsive & not breathing (CPR)</li>
+<div id="f_step1" class="step-info">
+  <ol>
+    <li>Check responsiveness and shout for help. Call emergency services immediately or tell someone to call.</li>
+    <li>Place the person on their back on a firm surface. For adults, begin chest compressions: 100–120 compressions per minute, depth ~5 cm (2 inches).</li>
+    <li>If trained, use a 30:2 compression-to-ventilation ratio. If untrained, perform continuous chest compressions (hands-only CPR) until help arrives.</li>
+    <li>If an AED is available, turn it on and follow prompts as soon as possible.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/gDmy0of0XAk"
+      title="First aid for someone who is unresponsive and not breathing"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=gDmy0of0XAk" target="_blank">
+        YouTube – First aid for someone who is unresponsive and not breathing
+      </a>
+    </p>
+  </div>
+</div>
+
+
+   <li onclick="toggleStep('f_step2')">Choking (conscious person over 1 year)</li>
+<div id="f_step2" class="step-info">
+  <ol>
+    <li>If the person can cough forcefully, encourage them to keep coughing.</li>
+    <li>If they cannot breathe, give up to 5 firm back blows (between the shoulder blades) while leaning them forward.</li>
+    <li>If back blows fail, give up to 5 abdominal thrusts (Heimlich) for adults/children over 1 year; repeat cycles until the object is expelled or they become unconscious.</li>
+    <li>If they become unconscious, start CPR and call emergency services immediately.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/ewmbiHraztk"
+      title="Choking: First aid steps and key action ‒ British Red Cross"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=ewmbiHraztk" target="_blank">
+        British Red Cross – Choking: First Aid Steps & Key Action
+      </a>
+    </p>
+  </div>
+</div>
+
+
+
+      <li onclick="toggleStep('f_step3')">Severe bleeding (quick control)</li>
+<div id="f_step3" class="step-info">
+  <ol>
+    <li>Apply firm direct pressure to the wound with a clean dressing or cloth.</li>
+    <li>Maintain pressure; if blood soaks through, add more cloth on top — do not remove the original dressing.</li>
+    <li>If bleeding is uncontrollable and life-threatening, a trained rescuer may apply a tourniquet proximal to the wound.</li>
+    <li>Get emergency medical help immediately for severe bleeding.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/jYtJS1PtNq0"
+      title="First Aid for Severe Bleeding"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=jYtJS1PtNq0" target="_blank">
+        American Red Cross – First Aid for Severe Bleeding
+      </a>
+    </p>
+  </div>
+</div>
+
+
+    <li onclick="toggleStep('f_step4')">Burns (quick review)</li>
+<div id="f_step4" class="step-info">
+  <ol>
+    <li>Cool the burn under cool running water for at least 20 minutes (do NOT use ice).</li>
+    <li>Remove jewelry or tight clothing near the injured area (unless stuck to the skin).</li>
+    <li>Cover loosely with cling film or a sterile non-stick dressing after cooling. Seek urgent care for large, deep, or high-risk burns.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/tEMzeELjJ_E"
+      title="Burns First Aid and Prevention"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=tEMzeELjJ_E" target="_blank">
+        NewcastleHospitals – Burns First Aid and Prevention
+      </a>
+    </p>
+  </div>
+</div>
+
+
+<li onclick="toggleStep('f_step5')">Seizure (first aid)</li>
+<div id="f_step5" class="step-info">
+  <ol>
+    <li>Protect the person from injury — move sharp objects away. Cushion their head but do NOT restrain movements.</li>
+    <li>Time the seizure. If it lasts longer than 5 minutes, call emergency services.</li>
+    <li>When it ends, place them in the recovery position if breathing and stay with them until recovered.</li>
+  </ol>
+
+  <div class="video-container">
+    <iframe width="100%" height="215"
+      src="https://www.youtube.com/embed/1SMFUwyEafw"
+      title="First aid for someone having a seizure | British Red Cross"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    <p class="video-credit">
+      🎥 Video courtesy of 
+      <a href="https://www.youtube.com/watch?v=1SMFUwyEafw" target="_blank">
+        British Red Cross – First aid for someone having a seizure
+      </a>
+    </p>
+  </div>
+</div>
+
+
+    </ul>
+
+    <button class="back-btn" onclick="showPage('home')">⬅ Back</button>
+  </div>
+</section>
+
+<footer>
+  <section class="bottom-hotline">
+    <h2>🚨 Quick Access Hotlines</h2>
+    <div class="hotline-list">
+      <a href="#" id="hotline-fire" class="hotline-item">🚒 Fire: <strong id="num-fire">160</strong></a>
+      <a href="#" id="hotline-police" class="hotline-item">🚓 Police: <strong id="num-police">166</strong></a>
+      <a href="#" id="hotline-ambulance" class="hotline-item">🚑 Ambulance: <strong id="num-ambulance">911</strong></a>
+      <a href="#" id="hotline-redcross" class="hotline-item">⛑ Red Cross: <strong id="num-redcross">143</strong></a>
+<a href="#" id="hotline-map" class="hotline-item">
+  🗺️<strong id="map-link-text">View on Map</strong>
+</a>
+
+<div id="map-options" style="display:none; margin-top:10px;">
+<a href="#" id="hotline-map" class="hotline-item">📍 View Nearest Hospital</a>
+
+</div>
+
+
+<style>
+  .map-option {
+    display: inline-block;
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+  .map-option:hover {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    transform: scale(1.05);
+  }
+</style>
+
+<script>
+document.getElementById("hotline-map").addEventListener("click", function(event) {
+  event.preventDefault();
+  const button = document.getElementById("hotline-map");
+  button.innerText = "Locating...";
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const lat = position.coords.latitude;
+        const lng = position.coords.longitude;
+
+        // Waze URL for nearest hospital
+        const wazeURL = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes&zoom=16&query=hospital`;
+
+        // Redirect user to Waze
+        window.open(wazeURL, "_blank");
+
+        // Restore button text
+        button.innerText = "🗺️ View on Map";
+      },
+      () => {
+        alert("Cannot detect your location. Please enable Location Services.");
+        button.innerText = "📍 View Nearest Hospital";
+      }
+    );
+  } else {
+    alert("Your device does not support location detection.");
+    button.innerText = "📍 View Nearest Hospital";
+  }
+});
+
+
+
+</script>
+
+    </div>
+  </section>
+</footer>
+
+  <div id="chatbot-overlay"></div>
+
+  <div id="chatbot-popup">
+    <button id="close-chatbot">✖</button>
+    <div id="chatbase-container"></div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+  <script>
+  (function(){
+    if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+      window.chatbase=(...arguments)=>{
+        if(!window.chatbase.q){window.chatbase.q=[]}
+        window.chatbase.q.push(arguments)
+      };
+      window.chatbase=new Proxy(window.chatbase,{
+        get(target,prop){
+          if(prop==="q"){return target.q}
+          return(...args)=>target(prop,...args)
+        }
+      })
+    }
+    const onLoad=function(){
+      const script=document.createElement("script");
+      script.src="https://www.chatbase.co/embed.min.js";
+      script.id="WRjHRMwTYOuejNXgQ1xrY";
+      script.domain="www.chatbase.co";
+      document.getElementById("chatbase-container").appendChild(script);
+    };
+    if(document.readyState==="complete"){onLoad()}
+    else{window.addEventListener("load",onLoad)}
+  })();
+  </script>
+</body>
+</html>
